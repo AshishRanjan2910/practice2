@@ -1,14 +1,13 @@
+import { Component } from 'react';
 import './App.css';
-import NameFilter from './Components/NameFilter/NameFilter';
+import Dishes from './Components/Dishes/Dishes';
 
-function App() {
-  const nameList = ['Arvind', 'Shah', 'Dheeraj', 'Mukesh', 'Shrey'] 
-
-  return (
-    <div className="App">
-      <NameFilter nameList={nameList}/>
-    </div>
-  );
+export default class App extends Component {
+  render () {
+    return (
+      <div className="App">
+        <Dishes />
+      </div>
+    );
+  }
 }
-
-export default App;
