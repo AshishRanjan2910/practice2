@@ -1,6 +1,5 @@
 import { Component } from 'react';
 import './App.css';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 // import Dishes from './Components/Dishes/Dishes';
 import TodoList from './Components/TodoList/TodoList';
 
