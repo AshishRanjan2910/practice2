@@ -15,6 +15,7 @@ class TodoList extends Component {
 
     return (
       <ul>
+        <h1>Todo List</h1>
         {items.map((item, index) => (
           <li
             key={index}

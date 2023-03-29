@@ -1,10 +1,13 @@
 import { Component } from 'react';
 import './App.css';
-// import Dishes from './Components/Dishes/Dishes';
+import NameFilter from './Components/NameFilter/NameFilter'
+import Dishes from './Components/Dishes/Dishes'
 import TodoList from './Components/TodoList/TodoList';
 
 export default class App extends Component {
   render () {
+    const nameList = ['Arvind', 'Shah', 'Dheeraj', 'Mukesh', 'Shrey'] 
+
     const items = [
       { text: 'Coding 1 hour', done: true },
       { text: 'Meditate 10 mins', done: false },
@@ -16,6 +19,8 @@ export default class App extends Component {
     }
     return (
       <div className="App">
+        <NameFilter nameList={nameList}/>
+        <Dishes/>
         <TodoList items={items} onItemClick={itemClickHandle} />
       </div>
     );

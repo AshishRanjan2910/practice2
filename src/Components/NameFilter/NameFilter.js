@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./NameFilter.css"
 
 export default class NameFilter extends Component {
   constructor(props) {
@@ -8,7 +9,6 @@ export default class NameFilter extends Component {
     };
   }
 
-  // const [enteredName, setEnteredName] = React.useState("")
   render () {
     const nameFilterHandler = (event) => {
       this.setState({enteredName: event.target.value})
@@ -18,7 +18,7 @@ export default class NameFilter extends Component {
 
     return (
       <div className="name_filter__control">
-        <label>Name</label>
+        <label>Name: </label>
         <input type="text" value={this.state.enteredName} onChange={nameFilterHandler} />
         <div className="name-list">{filteredList.map(name => <p>{name}</p>)}</div>
       </div>

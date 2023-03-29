@@ -20,7 +20,7 @@ export default class Menu extends Component {
               <h2>
                 {dish.name}
                 {dish.label && <span className="dish-label">{dish.label}</span>}
-                <span className="dish-price">{dish.price}</span>
+                <span className="dish-price">${dish.price}</span>
               </h2>
 
               <img src={dish.image} alt={dish.name} />
